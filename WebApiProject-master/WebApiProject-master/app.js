@@ -117,7 +117,7 @@ app.get('/deleteCurrency', (req, res) => {
     });
 });
 
-app.get('/getAll', async (req,res)=>{
+app.get('/getCurrencyHistory', async (req,res)=>{
   res.send(await Currency.find({}));
 })
 app.get('/deleteOne', async (req,res)=>{
